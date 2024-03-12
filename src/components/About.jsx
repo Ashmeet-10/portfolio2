@@ -1,3 +1,4 @@
+import { Link } from 'react-router-dom'
 import Navbar from './Navbar'
 
 export default function About() {
@@ -22,7 +23,7 @@ export default function About() {
         explore new opportunities.</h5>
         <h5 className='justify'> Let's connect, collaborate, and build something amazing together. </h5>
 
-        <button className='home-about-btn1 '> <a className="home-about-btn" href='/technology'> Know skills </a>   </button>
+        <button className='home-about-btn1 '> <Link className="home-about-btn" href='/technology'> Know skills </Link>   </button>
     
     </div>
 

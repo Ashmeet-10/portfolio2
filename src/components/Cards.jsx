@@ -1,3 +1,5 @@
+import { Link } from "react-router-dom";
+
 export default function Cards(props) {
   return (
     <div>
@@ -6,7 +8,7 @@ export default function Cards(props) {
   <div className="card-body">
     <h5 className="card-title">{props.title}</h5>
     <p className="card-text">{props.content}</p>
-    <a href={props.link} className="btn btn-primary">Know More</a>
+    <Link href={props.link} className="btn btn-primary">Know More</Link>
   </div>
 </div>
     </div>

@@ -2,6 +2,7 @@ import React from 'react'
 
 import Navbar from './Navbar'
 import Footer from './Footer'
+import { Link } from 'react-router-dom'
 
 export default function Home() {
   return (
@@ -13,22 +14,22 @@ export default function Home() {
         I'm a <span>Front-end Developer | </span>
       </h3>
       <div className='ul'>
-        <a
+        <Link
           className='light-colour-navbar'
-          href='https://www.instagram.com/liveleenn'
+          to='https://www.instagram.com/liveleenn'
         >
           {' '}
           <i className='fa-brands fa-instagram fa-2xl icon-color  animate__animated zoom'></i>{' '}
-        </a>
-        <a className='light-colour-navbar' href='https://github.com/Live-25'>
+        </Link>
+        <Link className='light-colour-navbar' to='https://github.com/Live-25'>
           <i className='fa-brands fa-github fa-2xl icon-color  animate__animated zoom'></i>{' '}
-        </a>
-        <a
+        </Link>
+        <Link
           className='light-colour-navbar'
-          href='https://www.linkedin.com/in/liveleen-kaur-4b4033248'
+          to='https://www.linkedin.com/in/liveleen-kaur-4b4033248'
         >
           <i className='fa-brands fa-linkedin-in fa-2xl icon-color animate__animated zoom'></i>{' '}
-        </a>
+        </Link>
       </div>
       <div className='home-about'>
         <h2 className=' h2 center' style={{ fontSize: '3rem' }}>
@@ -49,10 +50,10 @@ export default function Home() {
 
         <button className='home-about-btn1 zoom'>
           {' '}
-          <a className='home-about-btn' href='/about'>
+          <Link className='home-about-btn' to='/about'>
             {' '}
             Know more{' '}
-          </a>{' '}
+          </Link>{' '}
         </button>
       </div>
       <Footer />

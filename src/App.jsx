@@ -4,7 +4,7 @@ import About from './components/About'
 import Technology from './components/Technology'
 import Project from './components/Project'
 import Contact from './components/Contact'
-import { BrowserRouter, Routes, Route } from 'react-router-dom'
+import { BrowserRouter, Routes, Route, Link } from 'react-router-dom'
 
 function App() {
   return (
@@ -17,7 +17,7 @@ function App() {
           <Route path='/contact' element={<Contact />} />
           <Route path='/projects' element={<Project />} />
         </Routes>
-        <a href='/learn-react'>Learn React</a>
+        <Link to='/learn-react'>Learn React</Link>
       </div>
     </BrowserRouter>
   )
